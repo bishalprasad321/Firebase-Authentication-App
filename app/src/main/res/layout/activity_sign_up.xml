@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="@color/black_background"
+    android:paddingBottom="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_theme">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/leftMargin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="32dp"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/midMargin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rightMargin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="32dp"/>
+
+        <TextView
+            android:id="@+id/sign_up_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/sign_up"
+            android:textColor="@color/white"
+            android:layout_marginTop="120dp"
+            android:textSize="35sp"
+            app:layout_constraintLeft_toRightOf="@id/leftMargin"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/sign_up_options_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_options_text"
+            android:textColor="@color/light_grey"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_marginTop="32dp"
+            app:layout_constraintLeft_toRightOf="@id/leftMargin"
+            app:layout_constraintTop_toBottomOf="@id/sign_up_text"/>
+
+        <ImageButton
+            android:id="@+id/google_btn"
+            android:layout_width="0dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/google_icon"
+            android:focusable="true"
+            android:clickable="true"
+            android:contentDescription="@string/google_option"
+            android:background="@drawable/button_background"
+            app:layout_constraintLeft_toRightOf="@id/leftMargin"
+            app:layout_constraintTop_toBottomOf="@id/sign_up_options_text"
+            app:layout_constraintRight_toLeftOf="@id/midMargin"/>
+
+        <ImageButton
+            android:id="@+id/phone_btn"
+            android:layout_width="0dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/mobile_icon"
+            android:focusable="true"
+            android:clickable="true"
+            android:contentDescription="@string/phone_option"
+            android:background="@drawable/button_background"
+            app:layout_constraintLeft_toRightOf="@id/midMargin"
+            app:layout_constraintTop_toBottomOf="@id/sign_up_options_text"
+            app:layout_constraintRight_toLeftOf="@id/rightMargin"/>
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@color/light_grey"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/montserrat_regular"
+            app:layout_constraintLeft_toRightOf="@id/leftMargin"
+            app:layout_constraintTop_toBottomOf="@id/phone_btn"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name_input"
+            android:layout_width="0dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="17dp"
+            android:hint="@string/name_hint"
+            android:textColor="@color/white"
+            android:textColorHint="@color/light_grey"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="14sp"
+            android:paddingStart="20dp"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:paddingEnd="20dp"
+            android:background="@drawable/input_background"
+            app:layout_constraintLeft_toRightOf="@id/leftMargin"
+            app:layout_constraintRight_toLeftOf="@id/rightMargin"
+            app:layout_constraintTop_toBottomOf="@id/name_text"/>
+
+        <TextView
+            android:id="@+id/email_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textColor="@color/light_grey"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/montserrat_regular"
+            app:layout_constraintLeft_toRightOf="@id/leftMargin"
+            app:layout_constraintTop_toBottomOf="@id/name_input"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_input"
+            android:layout_width="0dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="17dp"
+            android:hint="@string/email_hint"
+            android:textColor="@color/white"
+            android:textColorHint="@color/light_grey"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:background="@drawable/input_background"
+            app:layout_constraintLeft_toRightOf="@id/leftMargin"
+            app:layout_constraintRight_toLeftOf="@id/rightMargin"
+            app:layout_constraintTop_toBottomOf="@id/email_text"/>
+
+        <TextView
+            android:id="@+id/password_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textColor="@color/light_grey"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/montserrat_regular"
+            app:layout_constraintLeft_toRightOf="@id/leftMargin"
+            app:layout_constraintTop_toBottomOf="@id/email_input"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="17dp"
+            android:hint="@string/password_hint"
+            android:textColorHint="@color/light_grey"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="14sp"
+            android:maxLines="1"
+            app:passwordToggleEnabled="true"
+            android:gravity="center_vertical"
+            app:passwordToggleTint="@color/light_grey"
+            android:background="@drawable/input_background"
+            app:layout_constraintLeft_toRightOf="@id/leftMargin"
+            app:layout_constraintRight_toLeftOf="@id/rightMargin"
+            app:layout_constraintTop_toBottomOf="@id/password_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/montserrat_regular"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/create_account_btn"
+            android:layout_width="0dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/create_account"
+            android:textColor="@color/white"
+            style="@style/Widget.AppCompat.Button"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textAllCaps="false"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="18sp"
+            android:background="@drawable/gradient_background"
+            app:layout_constraintLeft_toRightOf="@id/leftMargin"
+            app:layout_constraintRight_toLeftOf="@id/rightMargin"
+            app:layout_constraintTop_toBottomOf="@id/password"/>
+
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/montserrat_regular"
+            android:minHeight="48dp"
+            android:text="@string/already_have_an_account"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@id/leftMargin"
+            app:layout_constraintRight_toLeftOf="@id/rightMargin"
+            app:layout_constraintTop_toBottomOf="@id/create_account_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

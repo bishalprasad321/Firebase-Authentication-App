@@ -1,0 +1,20 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.AuthenticationApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/violet_bright</item>
+        <item name="colorPrimaryVariant">@color/violet</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/violet_bright</item>
+        <item name="colorSecondaryVariant">@color/violet</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/violet_bright</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Widget.MaterialComponents.Button" parent="Widget.AppCompat.Button">
+        <item name="colorPrimary">@null</item>
+    </style>
+</resources>

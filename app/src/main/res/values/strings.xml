@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Authentication App</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_up_options_text">Sign up with any one of the following options</string>
+    <string name="log_in_options_text">Log in with any one of the following options</string>
+    <string name="google_option">Google Option</string>
+    <string name="phone_option">Phone Option</string>
+    <string name="name">Name</string>
+    <string name="name_hint">Enter your name</string>
+    <string name="email">Email</string>
+    <string name="email_hint">someone@example.com</string>
+    <string name="password">Password</string>
+    <string name="password_hint">Pick a strong password</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_have_an_account">Already have an account? <b><u><b>Log in</b></u></b></string>
+    <string name="log_in">Log in</string>
+    <string name="universe_background">Universe Background</string>
+    <string name="log_in_page">Log in</string>
+    <string name="sign_up_page">Sign up</string>
+    <string name="don_t_have_an_account">Don\'t have an account? <b><u><b>Sign up</b></u></b></string>
+    <string name="log_in_btn_text">Log in</string>
+    <string name="enter_the_password">Enter the password</string>
+    <string name="dummy_text">"Your authentication\nwas successful"</string>
+    <string name="otp_illustration">OTP illustration</string>
+    <string name="otp_login_text">Login with Mobile</string>
+    <string name="country_code">+91</string>
+    <string name="country_code_hint">Country Code</string>
+    <string name="phone_number_hint">Enter your number</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="verify">Verify</string>
+    <string name="otp">0</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="sign_out">Sign Out</string>
+</resources>

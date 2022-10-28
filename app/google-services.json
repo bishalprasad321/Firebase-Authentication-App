@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "982285191970",
+    "project_id": "authentication-app-56bb5",
+    "storage_bucket": "authentication-app-56bb5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982285191970:android:d98a8fd996c91d64a3337b",
+        "android_client_info": {
+          "package_name": "com.bishal.authenticationapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982285191970-46ig172pt5uq3dmq009ak1kef393smce.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bishal.authenticationapp",
+            "certificate_hash": "5a1f75be10125923d236e0ef189afbe64b04fc8e"
+          }
+        },
+        {
+          "client_id": "982285191970-uruq4knudp10shi49l6qj2vgs1t0dnmk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG3K1t69tuDS4W77yDAkfQKBiDxY5uA8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982285191970-uruq4knudp10shi49l6qj2vgs1t0dnmk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

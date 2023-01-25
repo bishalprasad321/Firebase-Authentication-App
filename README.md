@@ -29,4 +29,3 @@
     <li> <a href="https://developers.google.com/android/guides/client-auth">SHA-1</a> and <a href="https://developers.google.com/android/guides/client-auth">SHA-256</a> Fingerprints are provided by the Android Studio, which enables the linking of the Authenticator app with the Firebase Console. </li>
   </ul>
 </p>
-![auth08](https://user-images.githubusercontent.com/70791507/214523975-222df77c-2701-4191-823b-c156dcec7184.jpg)
